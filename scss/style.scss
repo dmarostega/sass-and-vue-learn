@@ -1,0 +1,71 @@
+$font-size-main: 15px;
+
+body{
+    background : orange;
+    font-size: $font-size-main;
+}
+
+/*  SELECTORS   */
+nav{
+    width: 100%;
+    background: #000;
+     ul{
+         list-style: none;
+         padding: 20px 0;
+     }
+     li{
+         color: red;
+         margin: 0 20px;
+         /* PROPRIEDADES ANINHADAS  */
+         font: {
+             family: sans-serif,"Times New Roman",Times;
+             size: 20px;
+             weight: bold;
+         }
+     }
+}
+
+/*  VARIAVEIS   */
+$width: 100%;
+//boa pratica: usar '-' ou '_'
+$font-size:1.2rem;
+$color: #fff;
+//utilizando outra variavel
+$border: solid 1px $color;
+
+p{
+    width: $width;
+    font-size: $font-size;
+    border: $border;
+}
+
+/*  VARIAVEIS NUMERICAS */
+$width-rem: 3.5rem;
+$width-px: 300px;
+/*  sass não aceita esse tipo sem medida    */
+$widht: 300;
+
+/*  STRINGS */
+$font: "Lucida Grande";
+$weight: bold;
+
+/*  cores   */
+$red: 255;
+$blue: 248;
+$yellow: 52;
+$newColor: rgba($red,$blue,$yellow);
+
+body{
+    color: $newColor;
+}
+
+
+/*  LISTAS     Não utilizadas diretamente no CSS, podem serem usadas em funções por exemplo */
+
+$cores: $red,$blue,$yellow,red, gray, #fff;
+//or
+$margin: 10px 20px 10px 15px;
+
+div.lista{
+    margin: $margin;
+}

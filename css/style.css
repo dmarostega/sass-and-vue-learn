@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body {
+  background: orange;
+  font-size: 15px;
+}
+
+/*  SELECTORS   */
+nav {
+  width: 100%;
+  background: #000;
+}
+nav ul {
+  list-style: none;
+  padding: 20px 0;
+}
+nav li {
+  color: red;
+  margin: 0 20px;
+  /* PROPRIEDADES ANINHADAS  */
+  font-family: sans-serif, "Times New Roman", Times;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*  VARIAVEIS   */
+p {
+  width: 100%;
+  font-size: 1.2rem;
+  border: solid 1px #fff;
+}
+
+/*  VARIAVEIS NUMERICAS */
+/*  sass não aceita esse tipo sem medida    */
+/*  STRINGS */
+/*  cores   */
+body {
+  color: #fff834;
+}
+
+/*  LISTAS     Não utilizadas diretamente no CSS, podem serem usadas em funções por exemplo */
+div.lista {
+  margin: 10px 20px 10px 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
