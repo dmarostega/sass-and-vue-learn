@@ -1,0 +1,17 @@
+/*
+
+        CONTROL DIRECTIVES  
+        @if and @else or @else if
+*/
+
+$template: orange;
+
+header{
+    @if($template == dark){
+        color:#000; 
+    } @else if($template == blue){
+        color: blue;
+    } @else {
+        color: red;
+    }
+}

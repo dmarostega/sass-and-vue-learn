@@ -1,0 +1,40 @@
+/*  PLACEHOLDERS    
+
+    utilizados para reutilizar blocos estáticos, diferentemente dos mixins que recebem codigos dinamicos 
+*/
+
+%center {
+    display: block;
+    margin: 0 auto;
+}
+
+/*  TESTANDO DIFERENÇAS COM MIXINS   */
+
+@mixin center {
+    display: block;
+    margin: 0 auto;
+}
+
+/*  mixin  
+para blocoso dinamicos, blocos que recebem valores diferentes
+ */
+div{
+    @include center;
+}
+
+p{ 
+    @include center;
+}
+
+
+/*  placeholder
+
+reaporveitar blocos estaticos */
+
+div{
+    @extend %center;
+}
+
+p{
+    @extend %center;
+}

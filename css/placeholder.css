@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*  PLACEHOLDERS    
+
+    utilizados para reutilizar blocos estáticos, diferentemente dos mixins que recebem codigos dinamicos 
+*/
+p, div {
+  display: block;
+  margin: 0 auto;
+}
+
+/*  TESTANDO DIFERENÇAS COM MIXINS   */
+/*  mixin   */
+div {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  display: block;
+  margin: 0 auto;
+}
+
+/*  placeholder */
+
+/*# sourceMappingURL=placeholder.css.map */

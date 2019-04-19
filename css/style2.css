@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*  OPERADORES   
+
+adição +
+subtração -
+multiplicação *
+divisão /
+modulo %
+*/
+h1 {
+  font-size: 7px;
+  font-size: 8px;
+}
+
+/*
+ o '-' pode significar mutas coisas no CSS
+- operadir de subtração (5px - 3px)
+- o inicio de um número negativo (-3px)
+- operador de negação unária (-$var
+- parte de um identificador (font-size)
+
+SUBTRAÇÂO e numeros negativos
+- subtração: inclua espaços em abmos os lados (3px - 2px) 
+- subtração com negativo: inclua espaço antes masi não depois do numero negativo ou negação unária (4px + -2px)
+- negação unária entre parentes: 10px (-$var).
+
+DIVISÃO
+MODULO..
+*/
+/*  operaçoes com CORES */
+p {
+  /*    NOTE WORKING THIS VERSION   */
+}
+
+/*
+DEPRECATED
+p.new{
+    color: #010203 + #010203;
+  }
+
+  p.new{
+    color: #010203 * 2;
+  }
+ */
+/* EXERCICIO 4*/
+p.interpolação {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style2.css.map */

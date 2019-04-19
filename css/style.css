@@ -42,4 +42,36 @@ div.lista {
   margin: 10px 20px 10px 15px;
 }
 
+/*  MAPS  (LISTAS multidimencionais)  */
+/*  INTERPOLAÇÃO: possibilita usar variaveis dentro nomes de propriedade ou dentro de regras CSS    */
+p.destaque {
+  border-color: blue;
+  font: 1.2rem/20px;
+}
+
+/*   EXTENDS    */
+.msg, .msg-done, .msg-erro {
+  border: 1px solid;
+  padding: 15px;
+  color: #0063db;
+}
+
+.msg-erro {
+  color: red;
+}
+
+.msg-done {
+  color: green;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*  DEPRECATED
+.hoverlink{
+    @extend a:hover;
+}
+*/
+
 /*# sourceMappingURL=style.css.map */

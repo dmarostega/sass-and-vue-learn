@@ -1,0 +1,22 @@
+/*
+
+        @import
+
+*/
+
+//@import arquivoimportado.sccs //or @inport arquivoimportado (sem extensão)
+
+
+/*
+@import "css/style.css";
+@import "foo"  min-width:400px;
+@import "Http://foo.com/bar";
+@import url("http//fonts.googleapis.com/css?family=Droid+Sans");
+*/
+
+/*          PARTIAL         */
+
+
+@import "partials/base.scss";
+@import "partials/buttons.scss";
+@import "partials/figures.scss"; 

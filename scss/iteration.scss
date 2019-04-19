@@ -1,0 +1,54 @@
+/*
+
+    ITERATIONS: looping
+
+    @for $i from 1 through 3
+
+    $i: variavel controle iteração 
+    from: valor inicial
+    througth: valor final
+    
+
+*/
+div{
+    @for $i from 1 through 3 {
+        .item-#{$i} {
+            width: 2em * $i;
+        }
+    } 
+}
+
+/*  fomr 'to': vai até o primeiro valor menor */
+
+.second{
+    @for $i from 1 to 3 {
+        .item-#{$i} {
+            width: 2em * $i;
+        }
+    } 
+} 
+
+/*  WHILE    
+    para listas
+ 
+    #each $animel in puma, sea-slug...
+*/    
+
+@each $animal in puma, cachorro, leão, egret, sapo, perereca, cavalo, boi, vaca{
+    #{$animal}-icon{
+        background-image: url('/images/#{$animal}.png');
+    }
+}
+
+/*
+    WHILE
+*/
+
+$i: 6;
+
+@while $i > 0 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+    $i: $i - 2;
+}

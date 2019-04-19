@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*
+
+    ITERATIONS: looping
+
+    @for $i from 1 through 3
+
+    $i: variavel controle iteração 
+    from: valor inicial
+    througth: valor final
+
+
+*/
+div .item-1 {
+  width: 2em;
+}
+div .item-2 {
+  width: 4em;
+}
+div .item-3 {
+  width: 6em;
+}
+
+/*  fomr 'to': vai até o primeiro valor menor */
+.second .item-1 {
+  width: 2em;
+}
+.second .item-2 {
+  width: 4em;
+}
+
+/*  WHILE    
+    para listas
+
+    #each $animel in puma, sea-slug...
+*/
+puma-icon {
+  background-image: url("/images/puma.png");
+}
+
+cachorro-icon {
+  background-image: url("/images/cachorro.png");
+}
+
+leão-icon {
+  background-image: url("/images/leão.png");
+}
+
+egret-icon {
+  background-image: url("/images/egret.png");
+}
+
+sapo-icon {
+  background-image: url("/images/sapo.png");
+}
+
+perereca-icon {
+  background-image: url("/images/perereca.png");
+}
+
+cavalo-icon {
+  background-image: url("/images/cavalo.png");
+}
+
+boi-icon {
+  background-image: url("/images/boi.png");
+}
+
+vaca-icon {
+  background-image: url("/images/vaca.png");
+}
+
+/*
+    WHILE
+*/
+.item-6 {
+  width: 12em;
+}
+
+.item-4 {
+  width: 8em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+/*# sourceMappingURL=iteration.css.map */

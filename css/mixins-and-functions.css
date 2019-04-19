@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*      MIXINS AND FUNCTIONS    */
+/*
+MIXINS
+- são estiloso para serem usado em outros estilos sem necessidade de reescrever mesmo código.
+   não retorna valor
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius:$radius;
+}
+
+-> como usar: 
+    @include border-radius(10px)
+*/
+.box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  color: blue;
+  font-size: 14px;
+}
+
+h2 {
+  color: green;
+  font-size: 19px;
+}
+
+/*  @mixin explicito    */
+.box1 {
+  border: 1px red solid;
+}
+
+.box2 {
+  border: 3px red solid;
+}
+
+.box3 {
+  border: 10px blue solid;
+}
+
+/*  @mixin argumentos dinamicos - lista dinamica    */
+.p1 {
+  padding: 10px;
+}
+
+.p2 {
+  padding: 15px, 10px, 2px;
+}
+
+.p3 {
+  padding: 1px, 2px, 4px, 2px;
+}
+
+/*      FUNÇÕES         
+
+funções nativas do SASS
+
+    ->  rgb($red,$green,$blue);
+    ->  rgba($red,$green,$blue,$alpha);
+    -> lighten($color,$amount);
+    ->  darken($color,$amount);
+    ->  unquote($string);
+    ->  quote($string);
+    ->  str-lenght($string);
+    ->  to-upper-case($string);
+    ->  to-lower-case($string);
+    ->  percentage($number);
+    ->  round($number);
+    ->  ceil($number);
+    ->  floor($number);
+
+*/
+body {
+  background: #64c864;
+}
+
+section {
+  background: rgba(100, 200, 100, 0.8);
+}
+
+section div {
+  background: white;
+  background: #111111;
+  font-weight: bold;
+  padding: 4;
+  font-family: "BOLD";
+  font-family: "bold";
+  width: 400%;
+  margin: 2;
+  margin: 3;
+  margin: 2;
+}
+
+/*  FUNÇÕES PERSONALIZADAS  */
+div.other {
+  width: 50%;
+}
+
+/*# sourceMappingURL=mixins-and-functions.css.map */

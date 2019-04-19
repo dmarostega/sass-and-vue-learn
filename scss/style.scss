@@ -69,3 +69,52 @@ $margin: 10px 20px 10px 15px;
 div.lista{
     margin: $margin;
 }
+
+/*  MAPS  (LISTAS multidimencionais)  */
+
+$social:(
+    /*  key: value*/
+    facebook: #3b5998,
+    flickr: #0063db//,
+    //...
+);
+
+/*  INTERPOLAÇÃO: possibilita usar variaveis dentro nomes de propriedade ou dentro de regras CSS    */
+
+$name: destaque;
+$attr: border;
+$line-height:20px;
+
+//em valores de propriedades
+p.#{$name}{
+    #{$attr}-color: blue;
+    font: #{$font-size}/#{$line-height};
+}
+
+/*   EXTENDS    */
+.msg{
+    border: 1px solid;
+    padding: 15px;
+    color: #0063db;
+}
+
+.msg-erro{
+    @extend .msg;
+    color: red;
+}
+
+.msg-done{
+    @extend .msg;
+    color: green; 
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/*  DEPRECATED
+.hoverlink{
+    @extend a:hover;
+}
+*/
